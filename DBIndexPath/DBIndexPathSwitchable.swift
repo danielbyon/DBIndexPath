@@ -23,15 +23,15 @@
 
 import Foundation
 
-protocol DBIndexPathSwitchable {
+public protocol DBIndexPathSwitchable {
     
     typealias DBIndexPathType: RawRepresentable
     
 }
 
-extension DBIndexPathSwitchable where DBIndexPathType.RawValue == DBIndexPath {
+public extension DBIndexPathSwitchable where DBIndexPathType.RawValue == DBIndexPath {
     
-    func indexPathFromNSIndexPath(indexPath: NSIndexPath) -> DBIndexPathType {
+    public func indexPathFromNSIndexPath(indexPath: NSIndexPath) -> DBIndexPathType {
         guard let rawValue = DBIndexPath(indexPath) else { fatalError("Invalid index path: \(indexPath)") }
         guard let retVal = DBIndexPathType(rawValue: rawValue) else { fatalError("Invalid raw value: \(rawValue)") }
         return retVal
