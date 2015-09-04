@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DBIndexPath"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A simple Swift struct that allows you to define enums with NSIndexPaths, to allow easier UITableView configuration."
   s.description  = <<-DESC
                    DBIndexPath is a simple wrapper struct around an NSIndexPath, to make it 
