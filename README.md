@@ -10,7 +10,7 @@ DBIndexPath's can be created by manually specifying the section/row, with a stri
 DBIndexPath was written with Xcode 7 beta 6 and Swift 2.0.
 
 ## Installation
-DBIndexPath is easily installed using Cocoapods:
+DBIndexPath is easily installed using CocoaPods:
 
 Put this into your podfile:
 
